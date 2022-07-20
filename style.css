@@ -1,0 +1,12 @@
+#test{
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+.classFromJs{
+  color: purple;
+}
+
+.abc{
+  color: blueviolet;
+}
