@@ -104,6 +104,50 @@ let removed = fruits6.splice(1, 2, "Lemon", "Kiwi");
 console.log(fruits6);
 console.log("removed fruits are "+ removed);
 
+//sort() and reverse()
+var test = ["orange","apple","mango","banna",];
+var count = [50,3,45,12,100,1,0,13,10];
+// test.sort();
+document.getElementById("bArrayMethod").innerHTML = "Array befor sort method => " + test;
+test.sort();
+document.getElementById("aArrayMethod").innerHTML = "Array after sort method => " + test;
+test.reverse();
+document.getElementById("rArrayMethod").innerHTML = "Array revese method => " + test;
+
+document.getElementById("bArrayMethod1").innerHTML = "Array before sort method => " + count;
+count.sort((a,b)=>{return a-b});
+document.getElementById("aArrayMethod1").innerHTML = "Array before sort method => " + count;
+count.reverse();
+document.getElementById("rArrayMethod1").innerHTML = "Array revese method => " + count;
+
+// finding heightest and lowest value in array.
+let count1 = [50,3,45,12,100,1,0,13,10];
+heighestElement = count1.sort((a,b)=>{return a-b});
+document.getElementById('heighestElement').innerTex = heighestElement[heighestElement.length-1];
+
+//lowest.
+lowestElement = count.sort((a,b)=>a-b);
+document.getElementById("lowestElement").innerText = lowestElement[0];
+
+//Destructuring Array.
+let desArray = ["lorem","ipsum",20,"ptaNahi"];
+document.getElementById("desArray").innerHTML = desArray;
+let [fName,lName,age,city] = desArray;
+document.getElementById("fName").innerText = fName;
+document.getElementById("lName").innerText = lName;
+document.getElementById("age").innerText = age;
+document.getElementById("city").innerText = city;
+
+//Destructuring Array nestted array.
+let desArray1 = ["lorem","ipsum",20,"ptaNahi",["male","20000"]];
+document.getElementById("desArray1").innerHTML = desArray1;
+let [fName1,lName1,age1,city1,[gander,salary]] = desArray1;
+document.getElementById("fName1").innerText = fName1;
+document.getElementById("lName1").innerText = lName1;
+document.getElementById("age1").innerText = age1;
+document.getElementById("city1").innerText = city1;
+document.getElementById("gander").innerText = gander;
+document.getElementById("salary").innerText = salary;
 
 
 
